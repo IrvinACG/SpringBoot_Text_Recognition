@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: SpringBoot_Text_Recognitiion
+  servlet:
+    multipart:  #Tamanio maximo de archivo
+      max-file-size: 3MB
+      max-request-size: 3MB
+      
+#Configuracion personalizada
+tesseract:
+  datapath: tessdata
