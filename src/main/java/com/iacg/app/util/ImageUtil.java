@@ -60,7 +60,6 @@ public class ImageUtil {
             // Crear un archivo temporal para guardar la imagen en escala de grises, nítida y sin ruido
             String extension = FileUtil.getFileExtension(file);
             String extWithout = extension.replace(".", "");
-            log.info("{}",extWithout);
             tempFile = File.createTempFile(file.getName(), extension);
             ImageIO.write(blackAndWhiteImage, extWithout, tempFile);
         
