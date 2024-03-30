@@ -57,7 +57,7 @@ public class TextController {
 			   description = InfoApi.TEXT_RECOG_DESC,
 			   responses = @ApiResponse(responseCode = "201", description = InfoApi.TEXT_RECOG_RES))
 	@PostMapping(consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
-	public ResponseEntity<ResponseGenericDto<TextDto>> uploadImage(@Parameter(description = "Imagen de tipo: jpeg, jpg, png, webp") 
+	public ResponseEntity<ResponseGenericDto<TextDto>> uploadImage(@Parameter(description = "Imagen de tipo: jpeg, jpg, png, tiff") 
 																		@RequestParam(name = "image", required = true) @ValidImage MultipartFile image,
 																	@Parameter(description = "Idioma del texto") 
 																		@RequestParam(name = "language", required = true) Language language){

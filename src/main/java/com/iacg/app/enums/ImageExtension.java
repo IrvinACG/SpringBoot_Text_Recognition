@@ -27,7 +27,7 @@ public enum ImageExtension {
 	/**
 	 * Variable WEBP
 	 */
-	WEBP(".webp");
+	TIFF(".tiff");
 	
 	/**
 	 * Variable extension
