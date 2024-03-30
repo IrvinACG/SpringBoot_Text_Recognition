@@ -70,5 +70,5 @@ public class TextController {
 		response.setResponse(new ResponseDto(HttpStatus.CREATED.value(), InfoApi.TEXT_RECOG_RES));
 		return ResponseEntity.status(HttpStatus.CREATED).body(response);
 	}
-	
+
 }//Fin de clase

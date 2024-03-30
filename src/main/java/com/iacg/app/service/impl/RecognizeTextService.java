@@ -9,7 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.iacg.app.dto.TextDto;
 import com.iacg.app.enums.Language;
 import com.iacg.app.service.IRecognizeTextService;
-import com.iacg.app.util.FileUtil;
+import com.iacg.app.util.ImageUtil;
 
 import lombok.extern.slf4j.Slf4j;
 import net.sourceforge.tess4j.Tesseract;
@@ -44,7 +44,7 @@ public class RecognizeTextService implements IRecognizeTextService{
 		textDto.setFile(image.getOriginalFilename());
 		
 		//Se realiza conversion de archivos
-		File imageFile = FileUtil.convert(image);
+		File imageFile = ImageUtil.convertImage(image);
 		//Variable donde se guarda texto
 		String text = null;
 		try {
